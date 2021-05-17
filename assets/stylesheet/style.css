@@ -1,0 +1,182 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/*common style*/
+
+body {font-family: 'Raleway', sans-serif;
+box-sizing: border-box;}
+html { font-size: 16px;}
+.flex{ display: flex;
+justify-content: space-between;
+align-items: center;}
+
+.flex-45{ flex: 0 1 45%;}
+.flex-30{ flex: 0 1 30%;}
+.flex-20{ flex: 0 1 20%;}
+.flex-25 { flex:0 1 25%;}
+.flex-55{ flex: 0 1 55%;}
+.flex-60{ flex: 0 1 60%;}
+
+a { text-decoration: none;}
+
+.margin {margin: 1.3rem 0;}
+
+.padding { padding: 1.3rem 0;}
+
+.container { max-width: 1200px;
+	width: 100%;
+margin: 0 auto;
+padding: 1.2rem 1.2rem;}
+
+.width { width: 100%;}
+
+.center { display: flex;
+justify-content: center;
+align-items: center;}
+
+.justify-content { display: flex;
+	justify-content: left;}
+
+/*custome styling*/
+.brand a{ font-size: 2rem;
+font-weight: 700;
+color: grey;}
+
+.nav-link a { margin-left: 2rem;
+font-weight: 600;
+color: grey;}
+.nav-link .active-link { color:orangered;}
+
+/*hero-section*/
+
+
+.hero-section{ background: linear-gradient(rgb(33, 33, 32,0.5), rgb(33, 33, 32, 0.5)) ,url(../media/hero-bg.jpg) ;
+	background-position: center center;
+	height: 30rem;
+}
+
+.hero-article h1{ font-size: 3rem;
+font-weight: 700;
+color: white;
+padding-top: 5rem;}
+
+.hero-article p{ font-size: 1.4rem;
+font-weight: 500;
+color: white;
+line-height: 2;}
+
+.hero-link .hero-icon { width: 3rem;
+height: 3rem;
+border-radius: 50%;
+background-color: tomato;
+color: white;
+text-align: center;
+z-index: 99;}
+
+.hero-link a{ padding: 0.5rem 2rem 0.5rem 3rem;
+background-color:rgba(51, 50, 50, 0.5);
+position: relative;
+margin-left: -2rem;
+color: white;
+font-weight: 400;
+border-radius: 3rem;
+}
+
+.hero-link a:hover{ background-color: tomato;}
+
+
+/*why article*/
+
+.why-article {position: relative;
+	margin-top: -12rem;
+	
+}
+
+.why-col-1{background-color: tomato;
+padding: 1rem;}
+
+.why-col-1 h2{ font-size: 2rem;
+color: white;
+font-weight: 700;}
+
+.why-col-1 p{ font-size: 1rem;
+color: white;
+padding: 2rem 0;
+line-height: 1.5;
+}
+
+.why-col-1 a{ display: inline-block;
+color: white;
+padding:0.8rem 2rem;
+background-color: rgb(87, 85, 85,0.5);
+border-radius: 2rem;
+margin-left: 5rem;}
+
+.why-col-2 { text-align: center;
+padding: 1rem;
+padding-top: 2rem;
+padding-bottom: 2rem;
+margin-left: 1rem;
+box-shadow: 0 0.4rem 0.4rem grey;
+background-color: white;
+border-radius: 1rem;}
+
+.why-col-2 i{ font-size: 1.5rem;
+color: tomato;}
+
+.why-col-2 h2{ font-size: 1.5rem;
+font-weight: 700;
+padding: 1rem 1rem;}
+
+.why-col-2 p{ font-size: 1rem;
+padding: 1rem 0;
+line-height: 1.3;}
