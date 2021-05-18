@@ -59,12 +59,19 @@ html { font-size: 16px;}
 justify-content: space-between;
 align-items: center;}
 
+.flex-10{ flex: 0 1 10%;}
+
 .flex-45{ flex: 0 1 45%;}
 .flex-30{ flex: 0 1 30%;}
 .flex-20{ flex: 0 1 20%;}
 .flex-25 { flex:0 1 25%;}
-.flex-55{ flex: 0 1 55%;}
+.flex-50{ flex: 0 1 50%;}
 .flex-60{ flex: 0 1 60%;}
+.flex-80{ flex:0 1 80%;}
+
+.flex-49{ flex: 0 1 49%;}
+
+.flex-32{ flex:0 1 32%}
 
 a { text-decoration: none;}
 
@@ -85,6 +92,24 @@ align-items: center;}
 
 .justify-content { display: flex;
 	justify-content: left;}
+
+	.align-content{ display: flex;
+	align-items: flex-start;}
+
+	.flex-wrap{ flex-wrap: wrap;}
+
+
+.allign-dots {text-align: center;}
+
+.text-allign { text-align: center;}
+
+.dot{ 
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+		display: inline-block;
+		background-color: grey;
+		text-align: center;}
 
 /*custome styling*/
 .brand a{ font-size: 2rem;
@@ -180,3 +205,395 @@ padding: 1rem 1rem;}
 .why-col-2 p{ font-size: 1rem;
 padding: 1rem 0;
 line-height: 1.3;}
+
+/*about section*/
+
+.about { background-color: rgb(254,249,247);}
+.about .iframe-container{ width:100%;
+height:0;
+padding-bottom:56.25%;
+position: relative;}
+
+.about iframe{position: absolute;
+width: 100%;
+height:100%;
+left:0;
+top:0;
+right:0;
+bottom: 0;
+}
+
+.about-item h3{ font-size: 1.4rem;
+font-weight: 600;
+padding: 1rem 0;}
+
+.about-item p{ font-size: 1rem;
+	line-height: 1.4;
+	padding-bottom: 2.5rem;
+}
+
+.about-circle { width: 4rem;
+height: 4rem;
+border: 1px dashed tomato;
+border-radius: 50%;
+color: tomato;
+background-color: white;
+font-size: 1rem;}
+
+.about-circle:hover{ background-color: tomato;}
+
+.about-circle i{ font-size: 1.5rem;
+color: tomato;}
+
+.about-circle i:hover{ color: white;}
+
+.about-col h4{ font-size: 1.1rem;
+font-weight: 600;
+padding-bottom: 0.7rem;}
+
+
+/*client section*/
+
+.client-item .client-image{ 
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+	padding: 0.5rem;
+	box-sizing: border-box;
+}
+
+.client-image:hover{ filter: none;}
+
+
+.active-dot { background-color: tomato;}
+.dot:hover{ background-color: tomato;}
+
+.active-dot:hover { background-color: grey;}
+
+/*service section*/
+
+.service { background-color: rgb(254,249,247);}
+
+
+.service-article { text-align: center;}
+
+.service-article h2{ font-size: 2rem;
+padding: 1.5rem;
+font-weight: 700;}
+
+.service-article p{ line-height: 1.3;
+font-size: 1rem;
+font-weight: 500;}
+
+
+
+.service-fieldset { 
+	text-align: center;
+	background-color: white;
+	box-shadow: 0.1rem 0.1rem 0.4rem 0.2rem grey;
+	margin-bottom: 4rem 
+}
+.service-fieldset h3{ font-size: 1.3rem;
+font-weight: 600;
+padding: 0.5rem 0;}
+
+.service-fieldset p{ font-size: 1rem;
+font-weight: 500;
+padding-bottom: 2rem;
+line-height: 1.2;}
+
+.service-icon { background-color: tomato;
+width:3.5rem;
+height: 3.5rem;
+border-radius: 50%;
+
+color: white;}
+
+.service-icon:hover{ background-color: transparent;
+color: tomato;
+border: 0.2rem solid tomato;}
+
+/*information-section*/
+
+.info-col { position: relative;
+margin-bottom: 1.5rem;}
+
+.info-article { position: absolute;
+bottom: 0.5rem;
+margin: 1.4rem;
+padding: 0.7rem;
+text-align: center;
+background-color: rgb(248, 248, 248 ,0.8);}
+
+.info-article h2{ font-size: 1.4rem;
+font-weight: 600;
+padding: 0.5rem 0;}
+
+.info-article p{ font-size: 0.9rem;
+line-height: 1.2;
+text-align: left;}
+
+.info-article a{ display: block;
+text-align: left;
+padding: 0.5rem 0;
+text-transform: uppercase;
+font-size: 0.8rem;
+font-weight: 500;
+color: black;}
+
+.info-article a i{ margin-right: 0.4rem;}
+
+.info-article:hover{ background-color: tomato;
+color: white;}
+
+/*testimonial section*/
+
+.testimonial-section {background:linear-gradient(rgb(33, 33, 32,0.5), rgb(33, 33, 32, 0.5)) , url(../media/testimonials-bg.jpg);
+background-size: cover;
+background-position: center center;
+height: 70vh;}
+
+.testimonial-col { text-align: center;
+padding-top: 6rem;}
+
+.testimonial-col h2 { font-size: 1rem;
+font-weight: 600;
+color: white;}
+
+.testimonial-col h3{ font-size: 0.7;
+font-weight: 500;
+color: rgb(252, 248, 248);
+padding: 1rem 0;}
+.testimonial-col p{ line-height: 1.6;
+	font-size: 0.7;
+	font-weight: 500;
+	color: rgb(252, 248, 248);
+	padding: 1rem 0;}
+
+	.testimonial-col p i{ color: grey;}
+
+.fig-img img{width: 8rem;
+height: 8rem;
+border-radius: 50%; 
+border: 0.6rem solid grey;}
+
+/*portfolio section*/
+
+.potfolio-col-1 { text-align: center;}
+
+.potfolio-col-1 h2{ font-size: 1.7rem;
+font-weight: 700;}
+
+.potfolio-col-1 p{ font-size: 1 rem;
+padding: 1rem 0;
+padding-bottom: 2rem;
+line-height: 1.4;}
+
+.portfolio-link li{ margin-right: 1.6rem;
+font-size: 0.9rem;
+font-weight: 500;
+padding: 0.3rem;
+padding-left:0.5rem ;
+padding-right: 0.5rem;
+border-radius: 2rem;}
+
+
+.portfolio-active { color: tomato;
+background-color: rgb(248, 178, 166);}
+
+.portfolio-link li:hover{color: tomato;
+	background-color: rgb(248, 178, 166) ;}
+
+.flex-center{display: flex;
+justify-content: center;}
+
+
+.portfolio-item{ position: relative;
+margin-bottom: 1.5rem;}
+
+.portfolio-text { position: absolute;
+	opacity: 0;
+bottom: 2rem;
+left: 2rem;
+padding: 1rem;
+background-color: rgb(255, 255, 255,0.7);}
+
+.portfolio-text:hover{opacity: 1;
+cursor: pointer;}
+
+.portfolio-icon { margin-left: 11rem;}
+
+/*team-section*/
+
+.team-section { background-color:rgb(248, 248, 248 ,0.8) ;}
+
+.team-article {text-align: center;}
+.team-article  h2{ font-size: 1.7rem;
+	font-weight: 700;}
+	
+	.team-article  p{ font-size: 1 rem;
+	padding: 1rem 0;
+	padding-bottom: 2rem;
+	line-height: 1.4;}
+
+.team-item { text-align: center;
+	position: relative;
+	box-shadow: 0.2rem 0.1rem 0.5rem grey;}
+
+	.team-link { position: absolute;
+	top:12.7rem;
+	padding: 0.5rem;
+	padding-top:0.7rem;
+	padding-bottom: 0.7rem;
+	background-color: rgba(255, 249, 249, 0.8);
+	opacity: 0;
+}
+.team-link:hover{ opacity: 1;
+cursor: pointer;}
+
+.team-link a{ margin-left: 1.3rem;
+margin-right: 1.3rem;
+color: grey;}
+
+	.team-item h3{ font-size: 1.3rem;
+	font-weight: 600;
+padding-top: 1rem;}
+
+.team-item p{ font-size: 0.8rem;
+font-weight: 400;
+line-height: 1.6;
+padding-bottom: 1.5rem;}
+
+/*pricing section*/
+
+.price-article h2{ font-size: 1.7rem;
+	font-weight: 700;}
+	
+	.price-article  p{ font-size: 1 rem;
+	padding: 1rem 0;
+	padding-bottom: 2rem;
+	line-height: 1.4;}
+
+
+	.price-col h3{ 
+	padding: 1rem 0;
+font-size: 1.2rem;
+font-weight: 600;
+background-color: rgb(238, 229, 229,0.5);}
+
+.price-col { border: 1px solid rgb(233, 233, 233,0.5);
+border-radius: 2rem;}
+
+.price-col p{ color: grey;}
+
+.price-col p strong { font-size: 3rem;
+color: tomato;
+font-weight: 500;}
+
+.price-col strong sup{ vertical-align: super;
+font-size: small;
+}
+
+.price-col li{ padding: 0.8rem 0;
+font-weight: 500;}
+
+.price-col .in-active{ 
+font-weight:lighter;}
+
+.price-col span { display:block;
+	background-color: rgb(238, 229, 229,0.5)}
+
+	.btn{ display: inline-block;
+		padding: 0.5rem 2rem;
+	color: white;
+	font-weight: 600;
+background-color: tomato;
+margin: 0.6rem 0 ;
+border-radius: 0.3rem;}
+
+.btn:hover{ background-color: rgb(194, 80, 60);}
+
+.price-col .active-price{ background-color: tomato;}
+
+/*faq-section*/
+
+.faq { background-color: rgb(238, 229, 229,0.5) ;}
+
+.faq-section h2{ font-size: 1.7rem;
+	font-weight: 700;}
+	
+	.faq-section  p{ font-size: 1 rem;
+	padding: 1rem 0;
+	padding-bottom: 2rem;
+	line-height: 1.4;}
+
+	.faq-col{ margin: 1.5rem 0;
+padding: 1rem 0.4rem;
+background-color: white;}
+
+.question-icon { color: tomato;
+margin-right: 0.4rem;}
+
+.faq-text p{font-size: 1.1rem;
+	font-weight: 500;}
+
+	.faq-active { color: tomato;}
+
+	.faq-ans { font-size: 1rem;
+	font-weight: 500;
+line-height: 1.3;
+padding: 1rem 0 ;}
+
+
+/*contact-form*/
+.contact-article{ text-align: center;}
+
+.contact-article h2{ font-size: 1.7rem;
+	font-weight: 700;}
+	
+	.contact-article p{ font-size: 1 rem;
+	padding: 1rem 0;
+	padding-bottom: 2rem;
+	line-height: 1.4;}
+
+	.contact-item {display: flex;
+	justify-content: space-around;}
+
+.contact-col { box-shadow: 0.1rem 0.3rem 0.5rem 0.1rem grey;
+	padding: 0.7rem;
+}
+.contact-icon { margin-right: 1.5rem;
+margin-left: 1rem;
+margin-bottom: 3rem;
+width: 3rem;
+height: 3rem;
+border-radius: 50%;
+border: 1px dashed tomato;
+color: tomato;}
+
+.contact-col h3{ font-size: 1.2rem;
+font-weight: 600;
+padding-top: 0.5rem;}
+
+.contact-col address,p{ font-size: 0.9rem;
+font-weight: 400;
+padding: 1rem 0;
+line-height: 1.5;}
+
+
+.form-container { border: 1px solid black;
+padding: 2rem;
+margin:2rem;}
+
+.form{border: 1px solid black;
+width: 100%;}
+
+.form-input { width: 42%;
+padding:0.7rem ;}
+
+.form-margin{ margin-right: 7rem;}
+
+.form-subject { width: 97.3%;
+	padding:0.7rem;
+margin-top: 1rem;}
+
+
