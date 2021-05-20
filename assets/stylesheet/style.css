@@ -126,6 +126,10 @@ color: grey;}
 
 .nav-link li a:hover{ color: tomato;}
 
+#toggle{ display: none;}
+
+.bars { display: none;}
+
 
 /*doepdown styling*/
 
@@ -752,6 +756,45 @@ padding-bottom: 3rem;}
     .container{
         max-width: 720px;
     }
+/*nav-bar*/
+
+ 
+
+
+.nav{display: none;
+position:fixed;
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+background-color: rgb(212, 209, 209,0.9);
+padding-top: 8rem;
+height: 100vh;
+z-index: 999;}
+
+
+
+#toggle:checked ~ .nav{ 
+	display: inline-block;}
+
+.bars{ color: grey;
+display: inline-block;}
+
+.brand , .bars{ position: fixed;
+top:1.5rem;
+z-index:9999;}
+
+
+.brand { left: 2rem;
+}
+
+.bars { right: 2rem;}
+
+
+.nav li{ margin: 1.5rem 0;}
+
+.md-coloum { flex-direction: column;}
+
 
 	.md-flex-100{ flex: 0 1 100%;}
 
@@ -773,6 +816,8 @@ padding-bottom: 3rem;}
 	.md-margin-top{ margin-top: 2rem;}
 
 	
+
+	
 	
 	
 
@@ -787,12 +832,35 @@ padding-bottom: 3rem;}
 
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 360px) {
     html {
-      font-size: 10px;
+      font-size: 8px;
     }
     .container {
-      max-width: 520px;
+      max-width: 320px;
     }
+/*why-section*/
+
+	.sm-flex-100{ flex:0 1 100%;}
+
+	.sm-flex-wrap{display: flex;
+	flex-wrap: wrap;}
+
+
+	.sm-margin{ margin-top: 3rem;}
+
+	.sm-heading h2, .sm-heading h3{ font-size: 3rem;}
+	.sm-heading p{ font-size: 1.5rem;}
+	.sm-heading li{font-size: 1.5rem;} 
+    .sm-heading h4{ font-size: 1.8rem;}
+	.sm-padding { padding-top: 3rem;
+	padding-bottom: 3rem;}
+
+	.sm-form-input-width{ width:98%;}
+
+
+
+.bottom-link-top{display: none;}
+
 
 }
